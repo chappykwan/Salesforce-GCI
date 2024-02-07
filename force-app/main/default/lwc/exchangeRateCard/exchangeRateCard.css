@@ -1,0 +1,23 @@
+:host {
+    --slds-c-button-brand-color-background: var(--slds-g-color-brand-base-60);
+    --slds-c-button-brand-color-background-hover: var(--slds-g-color-brand-base-40);
+    --slds-c-button-brand-color-border: var(--slds-g-color-brand-base-60);
+    --slds-c-button-brand-color-border-hover: var(--slds-g-color-brand-base-40);
+    --slds-c-button-brand-text-color: var(--slds-g-color-neutral-base-100);
+}
+
+.c-container {
+    border: var(--lwc-borderWidthThin, 1px) solid #d8dde6;
+    margin: 10px 0 20px;
+}
+
+.header-column {
+    padding: 0 2rem;
+}
+
+.field-title {
+    font-size: .75rem;
+    line-height: 1.25;
+    color: #54698d;
+    margin-bottom: .25rem;
+}

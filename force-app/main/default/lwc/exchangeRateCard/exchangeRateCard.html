@@ -1,0 +1,48 @@
+<template>
+  <lightning-card title="Bitcoin Exchange Rate (CAD based)">
+    <lightning-button
+      variant="brand"
+      label={buttonLabel}
+      title="Update Exchange Rates"
+      slot="actions"
+      onclick={handleClick}
+      disabled={isButtonDisabled}
+      class="refresh-button"
+    >
+    </lightning-button>
+    <div class="c-container">
+      <lightning-layout>
+        <lightning-layout-item padding="around-small">
+          <div class="header-column">
+            <p class="field-title" title="Field 1">Exchange Rate</p>
+            <p>
+              <lightning-formatted-number
+                value={rate}
+                maximum-fraction-digits="8"
+                minimum-fraction-digits="8"
+              >
+              </lightning-formatted-number>{name}
+            </p>
+          </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+          <div class="header-column">
+            <p class="field-title" title="Field 3">Last Updated Date</p>
+            <p>
+              <lightning-formatted-date-time
+                value={updateDate}
+                year="numeric"
+                month="numeric"
+                day="numeric"
+                hour="2-digit"
+                minute="2-digit"
+                hour12="false"
+              >
+              </lightning-formatted-date-time>
+            </p>
+          </div>
+        </lightning-layout-item>
+      </lightning-layout>
+    </div>
+  </lightning-card>
+</template>
